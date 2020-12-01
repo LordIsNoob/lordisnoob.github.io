@@ -1,5 +1,5 @@
 # lordisnoob.github.io
 
-# Hello Skylord.
+# Hello kcubeterm.
 
 Visit my site at https://lordisnoob.github.io/
