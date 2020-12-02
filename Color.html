@@ -1,0 +1,154 @@
+<!--Colourfull snakes might have been a better title...-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>🔴🐍</title>
+    </head>
+    <body>
+        <canvas id="cnv"></canvas>
+        <script>
+            "use strict";
+var W,H;
+var C,particles=[],touch = false;
+
+const {sin, cos, PI, sqrt, random, floor} = Math;
+
+function id(n){
+    return document.getElementById(n);
+}
+    
+function atan(x1,y1,x2,y2){
+    let dx = x2 - x1;
+    let dy = y2 - y1;
+    if(dx==0){
+        if(dy>=0){
+            return PI/2;
+        }
+        else{
+            return (3/2)*PI;
+        }
+    }
+    else if(dx>0){
+        return Math.atan(dy/dx);
+    }
+    else{return PI+Math.atan(dy/dx);}
+}
+
+window.onload = function(){
+    var cnv = document.getElementById("cnv");
+    var ctx = cnv.getContext("2d");
+    function init(){
+        W = window.innerWidth;
+        H = window.innerHeight;
+        cnv.width = W;
+        cnv.height = H;
+        C = {
+            x:W/2,
+            y:H/2,
+        };
+        
+    }
+    init();
+    window.onresize = init;
+    
+    function move(e){
+        C.x = e.clientX;
+        C.y = e.clientY;
+        if(!C.x){
+            C.x = e.touches[0].clientX;
+            C.y = e.touches[0].clientY;
+        }
+        touch = true;
+    }
+    cnv.addEventListener("touchmove",move);
+    cnv.addEventListener("touchstart",move);
+    cnv.addEventListener("touchend",function(){
+        touch = false;
+    });
+    cnv.addEventListener("mousedown",function(){
+        cnv.addEventListener("mousemove",move);
+    });
+    cnv.addEventListener("mouseup",function(){
+        cnv.removeEventListener("mousemove",move);
+        touch = false;
+    });
+    
+    
+    
+    function Particle(){
+        this.x = W*random();
+        this.y = H*random();
+        this.v = 5 + 3*random();
+        this.dx = 5*random();
+        this.dy = 5*random();
+        this.da = [1.4,-1.4,1.5,-1.5][Math.round(random()*3)];
+        this.color = floor(random()*360);
+        this.draw = function(){
+            if(touch){
+                let ang = atan(this.x,this.y,C.x,C.y) + this.da;
+            this.dx = this.v * cos(ang);
+            this.dy = this.v * sin(ang);
+            }
+            
+            /*this.dx*=random();
+            this.dy*=random();*/
+            
+            this.x += this.dx;
+            this.y += this.dy;
+            
+            if(this.x>W){this.x=W;this.dx=-this.dx;}
+            if(this.x<0){this.x=0;this.dx=-this.dx;}
+            if(this.y>H){this.y=H;this.dy=-this.dy;}
+            if(this.y<0){this.y=0;this.dy=-this.dy;}
+            
+            for(let P of particles){
+                if(Math.sqrt((this.x-P.x)**2 + (this.y-P.y)**2)<=20){
+                    let x = this.dx;
+                    let y = this.dy;
+                    this.dx = P.dx;
+                    this.dy = P.dy;
+                    P.dx = x;
+                    P.dy = y;
+                }
+            }
+            
+            ctx.beginPath();
+            ctx.fillStyle = `hsl(${this.color}deg,100%,50%)`;
+            ctx.shadowColor = `hsl(${this.color}deg,100%,75%)`;
+            ctx.shadowBlur = 10;
+            ctx.arc(this.x,this.y,5,0,PI*2);
+            ctx.fill();
+            
+        }
+    }
+    
+    for(let i=0;i<10;i++){
+        let p = new Particle();
+        particles.push(p);
+    }
+    
+    function animate(){
+        ctx.shadowColor = "transparent";
+        ctx.fillStyle = "rgba(0,0,0,0.05)"
+        ctx.fillRect(0,0,W,H);
+        for(let p of particles){
+            p.draw();
+        }
+        window.requestAnimationFrame(animate);
+    }
+    animate();
+    
+    
+    
+}
+        </script>
+        <style>
+            body {
+    margin:0;
+    width:100vw;
+    height:100vh;
+    background-color:black;
+}
+        </style>
+    </body>
+</html>
