@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <link rel="styl
+esheet" href="styles.css">
+        <title>whatsapp</title>
+    </head>
+    <body>
+     
+<img class="num1" src="https://dl.dropbox.com/s/nl29a38doz74dje/Screenshot_20201123-002038~2.jpg?" alt"pic">
+
+<br /><br /><br />
+
+<img class="mom" src="https://dl.dropbox.com/s/7dkfyyfuxxrwecp/Screenshot_20201122-230023.jpg?" alt"pic">
+           
+           <table id="mom" border="0">
+  <tr>
+    <td><b>mom</b></td>
+    <td class="dot">......................</td>
+    <td class="dot">......................</td>
+    <td class="on">11:03pm</td>
+  </tr>
+  <tr>
+    <td class="on">recording...</td>
+    <td></td>
+
+  </tr>
+</table>
+
+<br /><br />
+
+<img class="tem" src="https://dl.dropbox.com/s/obh3h3q5fy6wy19/Screenshot_20201122-230454.jpg?" alt"pic">
+           
+           <table id="tem" border="0">
+  <tr>
+    <td><b>senior girl</b></td>
+    <td class="dot">..</td>
+    <td class="dot">..</td>
+    <td class="on">11:03pm</td>
+  </tr>
+  <tr>
+    <td class="oo">pick my call love, i nid you, have love you</td>
+    <td></td>
+
+  </tr>
+</table>
+
+<br /><br />
+
+<img class="bro" src="https://dl.dropbox.com/s/8j38445hg582wbr/Screenshot_20201122-225705.jpg?" alt"pic">
+           
+           <table id="bro" border="0">
+  <tr>
+    <td><b>bro</b></td>
+    <td class="dot">.</td>
+    <td class="dot">.</td>
+    <td class="on">11:03pm</td>
+  </tr>
+  <tr>
+    <td class="oo">toheeb, take 50k bring it over plsssssssss</td>
+    <td></td>
+
+  </tr>
+</table>
+
+<br /><br />
+
+<img class="kc" src="https://dl.dropbox.com/s/34qbxolmqae74wc/Screenshot_20201122-231232.jpg?" alt"pic">
+           
+           <table id="kc" border="0">
+  <tr>
+    <td><b>+91 96253 07895</b></td>
+    <td class="dot">.............</td>
+    <td class="dot">.............</td>
+    <td class="on">11:03pm</td>
+  </tr>
+  <tr>
+    <td class="oo">where are you SkyLord?</td>
+    <td></td>
+
+  </tr>
+</table>
+
+<br /><br />
+
+<img class="nerd" src="https://dl.dropbox.com/s/lqyq4oypxk79gsy/Screenshot_20201123-121802.jpg?" alt"pic">
+           
+           <table id="nerd" border="0">
+  <tr>
+    <td><b>Nerd</b></td>
+    <td class="dot">.....</td>
+    <td class="dot">.....</td>
+    <td class="on">11:03pm</td>
+  </tr>
+  <tr>
+    <td class="oo">$200 ready, send me ur acc num pls</td>
+    <td></td>
+
+  </tr>
+</table>
+
+<br /><br />
+
+<img class="num" src="https://dl.dropbox.com/s/4h48ilkpms49xkt/Screenshot_20201122-231546.jpg?" alt"pic">
+           
+           <table id="num" border="0">
+  <tr>
+    <td><b>+1 (876) 784-7108</b></td>
+    <td class="dot">..........</td>
+    <td class="dot">..........</td>
+    <td class="on">11:03pm</td>
+  </tr>
+  <tr>
+    <td class="oo">pick my call love i need you!!</td>
+    <td></td>
+
+  </tr>
+</table>
+
+<br />
+<br />
+
+<img class="numm" src="https://dl.dropbox.com/s/4b3ckj9egs3lhh1/Screenshot_20201123-121053.jpg?" alt"pic">
+           
+           <table id="numm" border="0">
+  <tr>
+    <td><b>boda nojim</b></td>
+    <td class="dot">........</td>
+    <td class="dot">........</td>
+    <td class="on">11:03pm</td>
+  </tr>
+  <tr>
+    <td class="oo">where are you? come here now</td>
+    <td></td>
+
+  </tr>
+</table>
+
+<br /><br />
+
+<img class="nummm" src="https://dl.dropbox.com/s/1o2el0ovh789csu/Screenshot_20201123-121024.jpg?" alt"pic">
+           
+           <table id="nummm" border="0">
+  <tr>
+    <td><b>+1 (876) 784-708</b></td>
+    <td class="dot">.......</td>
+    <td class="dot">.......</td>
+    <td class="on">11:03pm</td>
+  </tr>
+  <tr>
+    <td class="oo">pls bring it in exchange of pussy</td>
+    <td></td>
+
+  </tr>
+</table>
+<style>
+body {
+    background-color:#0C090A;
+    color:white
+}
+img.num1{
+    float:left;
+    height:120px;
+    width:360px;
+    background: black;
+    margin-left:-8px;
+    margin-top:-8px;
+}
+
+td.on{
+    color:#1EBEA5;
+    font-size:small;
+}
+td.oo{
+    color:#C0C0C0;
+    font-size:small;
+}
+td.dot{
+    color:#000000;
+}
+#num{
+    margin-top:10px;
+    margin-left:70px;
+}
+#mom{
+    margin-top:10px;
+    margin-left:70px;
+}
+img.mom{
+    float:left;
+    height:65px;
+    width:65px;
+    background: black;
+    border-radius:70%;
+}
+#tem{
+    margin-top:10px;
+    margin-left:70px;
+}
+img.tem{
+    float:left;
+    height:65px;
+    width:65px;
+    background: black;
+    border-radius:70%;
+}
+#bro{
+    margin-top:10px;
+    margin-left:70px;
+}
+img.bro{
+    float:left;
+    height:65px;
+    width:65px;
+    background: black;
+    border-radius:70%;
+}
+#kc{
+    margin-top:10px;
+    margin-left:70px;
+}
+img.kc{
+    float:left;
+    height:65px;
+    width:65px;
+    background: black;
+    border-radius:70%;
+}
+#nerd{
+    margin-top:10px;
+    margin-left:70px;
+}
+img.nerd{
+    float:left;
+    height:65px;
+    width:65px;
+    background: black;
+    border-radius:70%;
+}
+#num{
+    margin-top:10px;
+    margin-left:70px;
+}
+img.num{
+    float:left;
+    height:65px;
+    width:65px;
+    background: black;
+    border-radius:70%;
+}
+#numm{
+    margin-top:10px;
+    margin-left:70px;
+}
+img.numm{
+    float:left;
+    height:65px;
+    width:65px;
+    background: black;
+    border-radius:70%;
+}
+#nummm{
+    margin-top:10px;
+    margin-left:70px;
+}
+img.nummm{
+    float:left;
+    height:65px;
+    width:65px;
+    background: black;
+    border-radius:70%;
+}</style>
+    </body>
+</html>
