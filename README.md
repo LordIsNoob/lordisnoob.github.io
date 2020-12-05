@@ -4,7 +4,7 @@
 
 
 
-Created by kcubeterm
+Created by **_kcubeterm_**
 
-Own by #skylord
+Own by **_skylord_**
 Visit my site at https://lordisnoob.github.io/
